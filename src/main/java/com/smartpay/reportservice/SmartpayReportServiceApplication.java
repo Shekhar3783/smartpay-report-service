@@ -1,4 +1,4 @@
-package com.smartpay.smartpay_report_service;
+package com.smartpay.reportservice;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

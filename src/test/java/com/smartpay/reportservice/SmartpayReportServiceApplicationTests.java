@@ -1,4 +1,4 @@
-package com.smartpay.smartpay_report_service;
+package com.smartpay.reportservice;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
