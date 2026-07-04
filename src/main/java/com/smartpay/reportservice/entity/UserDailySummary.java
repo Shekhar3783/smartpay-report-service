@@ -8,13 +8,14 @@ import java.time.LocalDate;
 import java.time.OffsetDateTime;
 import java.util.UUID;
 
+@Getter
+@Setter
 @Entity
 @Table(name = "user_daily_summary",
               uniqueConstraints = {
                @UniqueConstraint(columnNames = {"user_id","report_date"})
               })
-@Setter
-@Getter
+
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder

@@ -9,5 +9,8 @@ import java.util.UUID;
 
 public interface UserDailySummaryRepository extends JpaRepository<UserDailySummary, UUID> {
 
-    Optional<UserDailySummary> findByUserIDAndDate(String userId, LocalDate reportDate);
+    Optional<UserDailySummary> findByUserIdAndReportDate(
+            String userId,
+            LocalDate reportDate
+    );
 }
