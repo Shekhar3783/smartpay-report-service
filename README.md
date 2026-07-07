@@ -187,29 +187,25 @@ REST API
 
 ---
 
-## Run Locally
+## How to Run Locally
 
-Clone the repository
+### Prerequisites
+- Java 21
+- Maven 3.9+
+- docker-compose running from transaction-service repo
+- Transaction Service running (data source)
 
-```bash
-git clone https://github.com/Shekhar3783/smartpay-report-service.git
-```
+### Step 1 — Start Infrastructure
+cd smartpay-transaction-service
+docker-compose up -d
 
-Run Kafka, PostgreSQL and other dependencies.
-
-Start the application
-
-```bash
+### Step 2 — Run Report Service
+cd smartpay-report-service
 mvn spring-boot:run
-```
 
-The service starts on
-
-```
-http://localhost:8082
-```
-
----
+### API Endpoints
+GET http://localhost:8085/api/v1/reports/monthly?userId=USR-001
+GET http://localhost:8085/api/v1/reports/categories?userId=USR-001
 
 ## Project Status
 
